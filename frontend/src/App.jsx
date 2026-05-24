@@ -13,8 +13,8 @@ function App() {
     const fetchData = async () => {
       try {
         const [newsRes, trendsRes] = await Promise.all([
-          fetch('http://localhost:8000/api/news'),
-          fetch('http://localhost:8000/api/trends')
+          fetch('https://abcd-latest.onrender.com/api/news'),
+          fetch('https://abcd-latest.onrender.com/api/trends')
         ]);
         
         if (!newsRes.ok || !trendsRes.ok) {
